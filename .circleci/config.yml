@@ -3,20 +3,7 @@ version: 2.1
 orbs:
   docker: circleci/docker@1.7.0
 
-jobs:
-  say-hello:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
 workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
   example-workflow:
     jobs:
       - docker/publish:
