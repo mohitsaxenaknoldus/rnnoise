@@ -8,9 +8,8 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - docker/build:
-          path: rnnoise/Dockerfile 
-          image: rnnoise 
+      - docker/update-description:
+          image: docker_demo 
 
 workflows:
   example-workflow:
