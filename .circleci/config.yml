@@ -8,9 +8,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - docker/update-description:
-          image: mohitsaxenaknoldus/docker_demo 
-
+      - docker/check
 workflows:
   example-workflow:
     jobs:
