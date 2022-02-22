@@ -9,6 +9,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - docker/build:
+          path: rnnoise/Dockerfile 
           image: rnnoise 
 
 workflows:
